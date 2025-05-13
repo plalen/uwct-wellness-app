@@ -41,7 +41,7 @@ function App() {
       reflections,
       timestamp: new Date().toISOString()
     };
-    await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+    await fetch("https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbygn5AberHNrhZOJxbdXZS6jO8Aybfi2jnZGdD0bd0GZb_Xj6GiGObkxbaCE1LaTu0A/exec/exec", {
       method: "POST",
       body: JSON.stringify(payload)
     });
