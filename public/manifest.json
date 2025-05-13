@@ -1,0 +1,8 @@
+{
+  "short_name": "WellnessWheel",
+  "name": "UWCT Wellness Wheel App",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
