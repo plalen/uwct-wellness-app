@@ -83,10 +83,9 @@ function App() {
     <li>I am aware when I feel stress and know positive choices I can make to help me feel more balanced.</li>
     <li>I feel able to concentrate and focus in a range of different situations.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I can bounce back when things are difficult.</li>
@@ -94,75 +93,67 @@ function App() {
     <li>I am grateful for who I am and what I have.</li>
     <li>I am aware of my attitude and know that it can impact the way I view and interact with the world.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am making academic progress and growing in my abilities.</li>
     <li>I am achieving in line with my expectations.</li>
     <li>I am curious to learn.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I have a say in decisions that impact me.</li>
     <li>I have a voice that is listened to and the ability to affect my own life.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make nutritional choices that support my physical and mental wellbeing.</li>
     <li>I get enough sleep so that I generally feel well rested in the morning.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I exercise several times per week.</li>
     <li>I feel physically strong and flexible.</li>
     <li>My level of energy is consistently good.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am able to balance my time across work, rest and play.</li>
     <li>I balance my face-to-face interactions with my digital interactions.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make decisions that are sustainable/good for the planet whenever possible.</li>
     <li>I spend time connecting to and being immersed in nature several times per week.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make small decisions and take small actions every day to positively affect the people around me.</li>
     <li>I actively contribute to my community to make it a better place (home, school, etc.)</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am connected to where I come from (country, language, culture, religion, etc.)</li>
@@ -170,26 +161,23 @@ function App() {
     <li>I have found a supportive 'tribe' at UWCT (or in Phuket).</li>
     <li>I feel I belong here at UWCT.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>The relationships I choose to be in, support my wellbeing.</li>
     <li>I have a few strong relationships with platonic (non-romantic) friends.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
 
-<div className="category">
+        <div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I have fun and joy in my life.</li>
     <li>I create or express myself in ways that make me happy.</li>
   </ul>
-  <p><strong>Score: 6/10</strong></p>
-</div>
+  <p><strong>Score: 6/10</strong></p></div>
       </section>
 
       <section>
