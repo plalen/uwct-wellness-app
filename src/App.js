@@ -41,7 +41,7 @@ function App() {
       reflections,
       timestamp: new Date().toISOString()
     };
-    await fetch("https://script.google.com/macros/s/AKfycbygn5AberHNrhZOJxbdXZS6jO8Aybfi2jnZGdD0bd0GZb_Xj6GiGObkxbaCE1LaTu0A/exec/exec", {
+    await fetch("https://script.google.com/macros/s/AKfycbygn5AberHNrhZOJxbdXZS6jO8Aybfi2jnZGdD0bd0GZb_Xj6GiGObkxbaCE1LaTu0A/exec", {
       method: "POST",
       body: JSON.stringify(payload)
     });
@@ -50,8 +50,8 @@ function App() {
 
   if (submitted) {
     return (
-      <div style={{ padding: "40px", textAlign: "center", fontFamily: "Segoe UI, sans-serif" }}>
-        <img src="/uwct-logo.png" alt="UWCT Logo" style={{ maxWidth: "200px", marginBottom: "30px" }} />
+      <div style={ padding: "40px", textAlign: "center", fontFamily: "Segoe UI, sans-serif" }>
+        <img src="/uwct-logo.png" alt="UWCT Logo" style={ maxWidth: "200px", marginBottom: "30px" } />
         <h2>Thank you!</h2>
         <p>Your wellness check-in has been submitted.</p>
       </div>
@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div style={{
+    <div style={
       padding: "30px",
       maxWidth: "700px",
       margin: "auto",
@@ -67,11 +67,15 @@ function App() {
       background: "#f9f9f9",
       borderRadius: "12px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
-    }}>
-      <div style={{ textAlign: "center" }}>
-        <img src="/uwct-logo.png" alt="UWCT Logo" style={{ maxWidth: "200px", marginBottom: "20px" }} />
-        <h1 style={{ color: "#005f73" }}>UWCT Wellness Wheel</h1>
-    <div className="category">
+    }>
+      <div style={ textAlign: "center" }>
+        <img src="/uwct-logo.png" alt="UWCT Logo" style={ maxWidth: "200px", marginBottom: "20px" } />
+        <h1 style={ color: "#005f73" }>UWCT Wellness Wheel</h1>
+      </div>
+
+      <section>
+        <h2>Category Descriptions</h2>
+        <div className="category">
   <h2>Mental & Emotional Health</h2>
   <ul>
     <li>I am aware of my thoughts and feelings and am able to manage them.</li>
@@ -81,7 +85,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I can bounce back when things are difficult.</li>
@@ -91,7 +96,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am making academic progress and growing in my abilities.</li>
@@ -100,7 +106,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I have a say in decisions that impact me.</li>
@@ -108,7 +115,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make nutritional choices that support my physical and mental wellbeing.</li>
@@ -116,7 +124,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I exercise several times per week.</li>
@@ -125,7 +134,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am able to balance my time across work, rest and play.</li>
@@ -133,7 +143,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make decisions that are sustainable/good for the planet whenever possible.</li>
@@ -141,7 +152,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I make small decisions and take small actions every day to positively affect the people around me.</li>
@@ -149,7 +161,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I am connected to where I come from (country, language, culture, religion, etc.)</li>
@@ -159,6 +172,7 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
+
 <div className="category">
   <h2>6/10</h2>
   <ul>
@@ -167,7 +181,8 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-    <div className="category">
+
+<div className="category">
   <h2>6/10</h2>
   <ul>
     <li>I have fun and joy in my life.</li>
@@ -175,61 +190,64 @@ function App() {
   </ul>
   <p><strong>Score: 6/10</strong></p>
 </div>
-      </div>
+      </section>
 
-      {categories.map((category, index) => (
-        <div key={index} style={{ marginBottom: "15px" }}>
-          <label>{category}: <strong>{ratings[index]}</strong></label>
+      <section>
+        <h2>Self Check-In</h2>
+        {categories.map((category, index) => (
+          <div key={index} style={ marginBottom: "15px" }>
+            <label>{category}: <strong>{ratings[index]}</strong></label>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value={ratings[index]}
+              onChange={(e) => handleSliderChange(index, parseInt(e.target.value))}
+              style={ width: "100%" }
+            />
+          </div>
+        ))}
+
+        <div>
+          <label>Grade Level (required):</label>
           <input
-            type="range"
-            min="1"
-            max="10"
-            value={ratings[index]}
-            onChange={(e) => handleSliderChange(index, parseInt(e.target.value))}
-            style={{ width: "100%" }}
+            value={grade}
+            onChange={(e) => setGrade(e.target.value)}
+            style={ width: "100%", padding: "8px", margin: "8px 0", borderRadius: "6px", border: "1px solid #ccc" }
+            required
           />
         </div>
-      ))}
-
-      <div>
-        <label>Grade Level (required):</label>
-        <input
-          value={grade}
-          onChange={(e) => setGrade(e.target.value)}
-          style={{ width: "100%", padding: "8px", margin: "8px 0", borderRadius: "6px", border: "1px solid #ccc" }}
-          required
-        />
-      </div>
-      <div>
-        <label>Name (optional):</label>
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          style={{ width: "100%", padding: "8px", marginBottom: "8px", borderRadius: "6px", border: "1px solid #ccc" }}
-        />
-      </div>
-      <div>
-        <label>Reflections (optional):</label>
-        <textarea
-          value={reflections}
-          onChange={(e) => setReflections(e.target.value)}
-          style={{ width: "100%", height: "80px", padding: "8px", borderRadius: "6px", border: "1px solid #ccc", marginBottom: "12px" }}
-        />
-      </div>
-      <button
-        onClick={handleSubmit}
-        style={{
-          backgroundColor: "#005f73",
-          color: "white",
-          padding: "10px 20px",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          width: "100%"
-        }}
-      >
-        Submit
-      </button>
+        <div>
+          <label>Name (optional):</label>
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            style={ width: "100%", padding: "8px", marginBottom: "8px", borderRadius: "6px", border: "1px solid #ccc" }
+          />
+        </div>
+        <div>
+          <label>Reflections (optional):</label>
+          <textarea
+            value={reflections}
+            onChange={(e) => setReflections(e.target.value)}
+            style={ width: "100%", height: "80px", padding: "8px", borderRadius: "6px", border: "1px solid #ccc", marginBottom: "12px" }
+          />
+        </div>
+        <button
+          onClick={handleSubmit}
+          style={
+            backgroundColor: "#005f73",
+            color: "white",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            width: "100%"
+          }
+        >
+          Submit
+        </button>
+      </section>
     </div>
   );
 }
